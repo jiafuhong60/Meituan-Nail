@@ -1,0 +1,11 @@
+services:
+  nail-ai-backend:
+    build: .
+    container_name: nail-ai-backend
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/uploads:/app/app/uploads
+      - ./app/outputs:/app/app/outputs
