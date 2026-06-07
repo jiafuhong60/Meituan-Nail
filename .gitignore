@@ -1,0 +1,54 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Frontend dependencies and build outputs
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Backend runtime files
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+backend/app/outputs/*
+!backend/app/outputs/.gitkeep
+backend/app/static/styles/*
+!backend/app/static/styles/.gitkeep
+
+# Test temporary data
+.pytest_*.json
+
+# Local assets and experiment outputs
+try_qwen_models.py
+qwen_*_result.*
+hand.png
+style.png
+data.xlsx
+美甲图片下载结果/
+
+# Logs
+*.log
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
